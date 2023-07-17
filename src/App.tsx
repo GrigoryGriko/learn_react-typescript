@@ -4,7 +4,7 @@ import Card, { CardVariant } from './components/Card';
 import List from './components/List';
 import TodoItem from './components/TodoItem';
 import UserItem from './components/UserItem';
-import UserList from './components/UserList';
+import EventsExample from './components/EventsExample'
 import { ITodo, IUser } from './types/types';
 
 const App = () => {
@@ -36,6 +36,8 @@ const App = () => {
 
   return (
     <div>
+      <EventsExample/>
+
       <Card
       onClick={() => console.log('нажатие произошло')}
         variant={CardVariant.outlined}
