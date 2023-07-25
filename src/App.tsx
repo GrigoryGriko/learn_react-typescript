@@ -4,13 +4,16 @@ import EventsExample from './components/EventsExample'
 import TodosPage from './components/TodosPage';
 import UsersPage from './components/UsersPage';
 
+
 const App = () => {
   return (
     <BrowserRouter>
       <div>
         <Routes>
-          <Route path={'/users'} element={<UsersPage/>}/>
-          <Route path={'/todos'} element={<TodosPage/>}/>
+          {/* @ts-ignore */}
+          <Route path={'/users'} element={<UsersPage/>} exact={true}/>
+          {/* @ts-ignore */}
+          <Route path={'/todos'} element={<TodosPage/>} exact={true}/>
         </Routes>
       </div>
     </BrowserRouter>
